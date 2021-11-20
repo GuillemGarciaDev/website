@@ -1,10 +1,10 @@
 import React from 'react'
-import '../utils/theme'
+import { Button } from '@chakra-ui/react'
 
 export default function Home() {
 	return (
-		<div>
-			Hello
-		</div>
+		<Button bgColor="primary.100" color="background.100">
+			Click Me!
+		</Button>
 	)
 }
