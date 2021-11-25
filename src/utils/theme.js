@@ -23,6 +23,10 @@ const theme = extendTheme({
 		error: {
 			100:'#B00020'
 		}
+	},
+	fonts: {
+		body: "Bogart",
+		heading: "Bogart"
 	}
 })
 
