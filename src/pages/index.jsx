@@ -1,10 +1,12 @@
 import React from 'react'
 import {Heading} from '@chakra-ui/react'
 
-export default function Home() {
+const Home = () => {
 	return (
 		<Heading>
-			This is a super title!
+			Welcome to the show!
 		</Heading>
 	)
 }
+
+export default Home
