@@ -25,8 +25,8 @@ const theme = extendTheme({
 		}
 	},
 	fonts: {
-		body: "Bogart",
-		heading: "Bogart"
+		body: 'Bogart',
+		heading: 'Bogart'
 	}
 })
 

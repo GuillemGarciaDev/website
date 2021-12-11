@@ -1,10 +1,14 @@
 import React from 'react'
-import {Heading} from '@chakra-ui/react'
-import HomeHeader from '../components/HomeHeader'
+import {Heading, Center} from '@chakra-ui/react'
 
 const Home = () => {
 	return (
-		<HomeHeader/>
+		<Center>
+			<Heading as="h2" color="secondaryVariant.100" bgColor="primaryVariant.100">
+				Welcome to the show!
+			</Heading>
+		</Center>
+			
 	)
 }
 

@@ -1,9 +1,10 @@
 import { Global } from '@emotion/react'
+import React from 'react'
 
 const Fonts = () => {
-    return (
-        <Global
-            styles={`
+	return (
+		<Global
+			styles={`
             
             @font-face {
                 font-family: 'Bogart';
@@ -59,8 +60,8 @@ const Fonts = () => {
                 src: url(/public/fonts/Bogart/Bogart-Thin-trial.ttf) format("truetype");
             }
             `}
-        />
-    )
+		/>
+	)
 }
 
 export default Fonts
