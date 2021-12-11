@@ -3,7 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 
 
-const Layout  = ({children}) => {
+const Layout = ({children}) => {
 
     return (
         <Box>
@@ -16,9 +16,7 @@ const Layout  = ({children}) => {
                 <meta rel="canonical" href="https://guillemgarcia.dev"/>
                 <title>Guillem Garcia</title>
             </Head>
-            <Container>
-                {children}
-            </Container>
+            {children}
         </Box>
     )
 }

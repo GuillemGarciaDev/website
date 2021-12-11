@@ -1,12 +1,12 @@
 import React from 'react'
 import {Heading} from '@chakra-ui/react'
+import HomeHeader from '../components/HomeHeader'
 
 const Home = () => {
 	return (
-		<Heading>
-			Welcome to the show!
-		</Heading>
+		<HomeHeader/>
 	)
 }
+
 
 export default Home
