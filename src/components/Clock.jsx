@@ -7,12 +7,12 @@ const Clock = () => {
     
 	useEffect(() => {
         
-		let currentTime = setInterval(() => setTime(new Date()), 1000)
+		let currentTime = setInterval(() => setTime(new Date()), 60000)
 		return function cleanUp() {clearInterval(currentTime)}
 	})
 
 	return (
-		<Text fontWeight='700' color='primary.100'>BCN {time.getHours().toString()}:{time.getMinutes().toString()}</Text>
+		<Text fontFamily="Montserrat" fontWeight='500' color='primary.100'>BCN {time.getHours().toString()}:{time.getMinutes() < 10 ? "0" + time.getMinutes().toString() : time.getMinutes().toString()}</Text>
 	)
 }
 
