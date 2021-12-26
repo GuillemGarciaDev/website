@@ -6,7 +6,7 @@ const HomeHead = () => {
 
 	return (
 		<Grid maxWidth={'100vw'}>
-			<Box w='100%' bgColor='secondary.100' p={3}>
+			<Box zIndex={2} w='100%' bgColor='secondary.100' p={3}>
 				<Container maxW='container.lg'>
 					<HStack>
 						<Text fontFamily='Montserrat' marginRight='auto' fontWeight='500' color='primary.100' >GUILLEM GARCIA </Text>
