@@ -1,10 +1,11 @@
 import React from 'react'
-import  {Button, VStack, Text, Box} from '@chakra-ui/react'
+import  {Text, Box} from '@chakra-ui/react'
+import CustomButton from './CustomButton'
 
 const Feature = ({title, hiragana, descr}) => {
 
     return (
-        <Box flexDirection='column' maxW='400' maxH='400'>
+        <Box display='flex' flexDirection='column' alignItems='left' maxW='400' maxH='400'>
             <Text
                 alignSelf='left'
                 fontSize='3.75rem'
@@ -12,24 +13,25 @@ const Feature = ({title, hiragana, descr}) => {
             >
                 {title}
             </Text>
-            <Text
-                alignSelf='right'
-                fontSize='1.5rem'
-                fontWeight='500'
-            >
-                {hiragana}
-            </Text>
-            <Text
-                alignSelf='left'
-            >
+            <Box display='flex' flexDirection='column' alignItems='center' marginBottom='1rem'>
+                <Text
+                    alignSelf='right'
+                    fontSize='1.5rem'
+                    fontWeight='500'
+                    
+                >
+                    {hiragana}
+                </Text>
+            </Box>
+            <Text>
                 {descr}
             </Text>
-            <Button
-                fontFamily='Montserrat'
-
-            >
-                GO
-            </Button>
+            <Box display='flex' flexDirection='column' alignItems='center' justifyContent='flex-end'>
+                <CustomButton
+                    text='GO'
+                    size='md'
+                />
+            </Box>
         </Box>
             
     )

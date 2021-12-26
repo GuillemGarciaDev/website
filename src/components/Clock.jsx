@@ -7,7 +7,7 @@ const Clock = () => {
     
 	useEffect(() => {
         
-		let currentTime = setInterval(() => setTime(new Date()), 60000)
+		let currentTime = setInterval(() => setTime(new Date()), 1000)
 		return function cleanUp() {clearInterval(currentTime)}
 	})
 
