@@ -1,10 +1,11 @@
 import React from 'react';
 import {Button} from '@chakra-ui/react'
-
-const CustomButton = ({text, size}) => {
+import Link from 'next/link'
+const CustomButton = ({text, size, page}) => {
 
     return (
-        <Button
+        <Link href={page}>
+            <Button
             variant='outline'
             backgroundColor='transparent'
             borderColor='secondary.100'
@@ -23,9 +24,10 @@ const CustomButton = ({text, size}) => {
             _focus={{
                 shadowColor: 'secondary.100'
             }}
-        >
-            {text}
-        </Button>
+            >
+                {text}
+            </Button>
+        </Link>
     )
 }
 

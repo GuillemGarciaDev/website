@@ -2,7 +2,7 @@ import React from 'react'
 import  {Text, Box} from '@chakra-ui/react'
 import CustomButton from './CustomButton'
 
-const Feature = ({title, hiragana, descr}) => {
+const Feature = ({title, hiragana, descr, page}) => {
 
     return (
         <Box maxW='400' maxH='334'>
@@ -30,6 +30,7 @@ const Feature = ({title, hiragana, descr}) => {
                 <CustomButton
                     text='GO'
                     size='md'
+                    page={page}
                 />
             </Box>
         </Box>
