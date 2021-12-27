@@ -10,8 +10,19 @@ const CustomButton = ({text, size}) => {
             borderColor='secondary.100'
             fontFamily='Montserrat'
             color='secondary.100'
-            marginTop='2rem'
-            size={size}
+            size='md'
+            width='5rem'
+            bottom='0'
+            _hover={{
+                color: 'white',
+                backgroundColor: 'secondary.100'
+            }}
+            _active={{
+                borderColor: 'secondary.100',
+            }}
+            _focus={{
+                shadowColor: 'secondary.100'
+            }}
         >
             {text}
         </Button>
