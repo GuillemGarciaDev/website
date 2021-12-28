@@ -23,7 +23,8 @@ const NavBar = () => {
                     margin='0rem 2rem'
                     padding='0.75rem 0rem'
                     _hover={{
-                        fontWeight: '700'
+                        fontWeight: '700',
+                        cursor: 'pointer'
                     }}
                 >
                     {el.name}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from '@chakra-ui/react'
 import Link from 'next/link'
-const CustomButton = ({text, size, page}) => {
+const CustomButton = ({text, size, page, width}) => {
 
     return (
         <Link href={page}>
@@ -12,7 +12,7 @@ const CustomButton = ({text, size, page}) => {
             fontFamily='Montserrat'
             color='secondary.100'
             size='md'
-            width='5rem'
+            width={width !== null ? width : '5rem'}
             bottom='0'
             _hover={{
                 color: 'white',
