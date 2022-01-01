@@ -18,7 +18,6 @@ const Feature = ({title, hiragana, descr, page}) => {
                 <Text
                     fontSize='1.5rem'
                     fontWeight='500'
-                    
                 >
                     {hiragana}
                 </Text>
