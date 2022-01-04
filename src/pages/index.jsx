@@ -126,17 +126,7 @@ const Home = () => {
 				</Flex>
 			</Container>
 			<BottomRadLine/>
-			<Box 
-				zIndex={2}
-				display='flex'
-				position='relative'
-				flexDirection='column'
-				alignItems='center'
-				justifyContent='center'
-				backgroundColor='secondary.100'
-			>
-				<Footer/>
-			</Box>
+			<Footer/>
 		</Box>
 		
 	)

@@ -8,6 +8,15 @@ import {motion} from 'framer-motion'
 const PhotoRadLine = () => {
     return (
         <motion.div
+            animate={{
+                scale: [1, 1.1, 0.8, 1.1, 1],
+                rotate: [90, 90, 90, 90, 90],
+            }}
+            rotat
+            transition={{
+                repeat: Infinity,
+                duration: 10,
+            }}
             style={{
                 display: 'block',
                 position: 'absolute', 
@@ -103,17 +112,7 @@ const About = () => {
                     </Box>
                 </SimpleGrid>
             </Container>
-            <Box 
-				zIndex={2}
-				display='flex'
-				position='relative'
-				flexDirection='column'
-				alignItems='center'
-				justifyContent='center'
-				backgroundColor='secondary.100'
-			>
-				<Footer/>
-			</Box>
+            <Footer/>
         </Box>
         
     )
