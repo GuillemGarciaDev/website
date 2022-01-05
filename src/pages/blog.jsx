@@ -2,8 +2,10 @@ import React from 'react'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import { getAllFilesMetadata } from '../../lib/mdx'
 import {Box, Text, Container} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+
 
 const RadLine = () => {
 
@@ -18,9 +20,9 @@ const RadLine = () => {
                 repeat: Infinity,
                 duration: 10,
             }}
-            style={{display: 'block', position: 'absolute', top: '-18rem', left: '18rem'}}
+            style={{display: 'block', position: 'absolute', top: '-18rem', left: '-18rem'}}
         >
-            <svg  width="718" height="738" viewBox="0 0 718 738" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg  width="44.875rem" height="46.125rem" viewBox="0 0 718 738" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M376.736 378.179C376.736 376.551 353.9 353.702 352.273 353.702C350.646 353.702 327.81 376.551 327.81 378.179C327.81 379.807 350.646 402.657 352.273 402.657C353.9 402.657 376.736 379.807 376.736 378.179Z" stroke="black" stroke-width="0.4"/>
             <path d="M386.399 375.315C386.216 373.039 351.686 343.837 349.411 344.033C347.136 344.217 317.951 378.767 318.146 381.043C318.33 383.32 352.86 412.521 355.135 412.325C357.41 412.142 386.595 377.592 386.399 375.315Z" stroke="black" stroke-width="0.4"/>
             <path d="M395.83 371.729C395.402 368.829 348.738 334.168 345.827 334.597C342.928 335.025 308.288 381.716 308.716 384.629C309.144 387.53 355.808 422.19 358.719 421.761C361.618 421.333 396.258 374.642 395.83 371.729Z" stroke="black" stroke-width="0.4"/>
@@ -72,7 +74,7 @@ const BottomRadLine = () => {
                 repeat: Infinity,
                 duration: 10,
             }}
-            style={{display: 'block', position: 'absolute', bottom: '0', right: '18rem'}}
+            style={{display: 'block', position: 'absolute', bottom: '0', right: '-18rem'}}
         >
             <svg  width="718" height="738" viewBox="0 0 718 738" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M376.736 378.179C376.736 376.551 353.9 353.702 352.273 353.702C350.646 353.702 327.81 376.551 327.81 378.179C327.81 379.807 350.646 402.657 352.273 402.657C353.9 402.657 376.736 379.807 376.736 378.179Z" stroke="black" stroke-width="0.4"/>
@@ -113,7 +115,7 @@ const BottomRadLine = () => {
     )
 }
 
-const Blog = () => {
+const Blog = ({ posts }) => {
     
     return (
         <Box>
@@ -139,3 +141,13 @@ const Blog = () => {
 }
 
 export default Blog
+
+export async function getStaticProps() {
+    const posts = await getAllFilesMetadata()
+    console.log(posts);
+    return {
+        props: {
+            posts
+        }
+    }
+}
