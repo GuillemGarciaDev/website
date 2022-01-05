@@ -5,7 +5,7 @@ import {Flex, Text} from '@chakra-ui/react'
 const pages = [
     {name: 'HOME', page: '/'},
     {name: 'ABOUT', page: '/about'},
-    {name: 'BLOG', page: '/blog/'},
+    {name: 'BLOG', page: '/blog'},
     {name: 'DESIGNS', page: '/designs'},
     {name: 'PROJECTS', page: '/projects'}
 ]
