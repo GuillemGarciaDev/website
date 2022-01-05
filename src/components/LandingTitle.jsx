@@ -10,6 +10,7 @@ const LandingTitle = (props) => {
                 fontSize='6rem' 
                 fontWeight='300'  
                 color='secondaryVariant.100'
+                align='center'
                 >
                 Welcome
             </Text>
@@ -17,6 +18,7 @@ const LandingTitle = (props) => {
                 fontSize='3rem' 
                 fontWeight='400'
                 color='secondaryVariant.100'
+                align='center'
             >
                 Are you looking for something?
             </Text>
