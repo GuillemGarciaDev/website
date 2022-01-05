@@ -13,7 +13,7 @@ const pages = [
 const NavBar = () => {
 
     return (
-        <Flex flexDirection='row' alignItems='center' justifyContent='center' backgroundColor='secondary.100'>
+        <Flex position='relative' zIndex={2} flexDirection='row' alignItems='center' justifyContent='center' backgroundColor='secondary.100'>
             {pages.map(el => 
             <Link href={el.page}>
                 <Text 
