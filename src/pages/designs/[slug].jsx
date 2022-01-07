@@ -2,10 +2,10 @@ import React from 'react'
 import {getFileBySlug, getFiles} from '../../../lib/mdx'
 import {MDXRemote} from 'next-mdx-remote'
 import NavBar from '../../components/Navbar'
-import {Box, Container, Button, Flex} from '@chakra-ui/react'
+import {Box, Container, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 
-const Post = ( { source, frontmatter } ) => {
+const Design = ( {source, frontmatter}) => {
 
     return (
         <Box>
@@ -27,13 +27,12 @@ const Post = ( { source, frontmatter } ) => {
             </Container>
         </Box>
     )
-
 }
 
 
 export async function getStaticProps( {params} ) {
 
-    const { source, frontmatter} = await getFileBySlug('posts' , params.slug)
+    const { source, frontmatter} = await getFileBySlug('designs' , params.slug)
 
     return {
         props: {source, frontmatter}
@@ -41,10 +40,10 @@ export async function getStaticProps( {params} ) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getFiles('posts')
-    const paths = posts.map((post) => ({
+    const designs = await getFiles('designs')
+    const paths = designs.map((design) => ({
         params: {
-            slug: post.replace(/\.mdx/, '')
+            slug: design.replace(/\.mdx/, '')
         }
     }))
 
@@ -53,5 +52,5 @@ export async function getStaticPaths() {
     }
 }
 
-export default Post
 
+export default Design

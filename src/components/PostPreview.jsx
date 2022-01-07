@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Text, Flex, Image} from '@chakra-ui/react'
 
-const Preview = ( {title, date, time, img}) => {
+const PostPreview = ( {title, date, time, img}) => {
 
     return (
         <Flex
@@ -40,4 +40,4 @@ const Preview = ( {title, date, time, img}) => {
 
 }
 
-export default Preview
+export default PostPreview

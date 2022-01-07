@@ -1,14 +1,15 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
-import Footer from '../components/Footer'
-import PostPreview from '../components/PostPreview'
-import Link from 'next/link'
 import { getAllFilesMetadata } from '../../lib/mdx'
-import {Box, Text, Container, List, ListItem} from '@chakra-ui/react'
+import {Flex} from '@chakra-ui/react'
 import TRadLine from '../components/TRadLine'
+import NavBar from '../components/Navbar'
+import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
+import  Link from 'next/link'
+import DesignPreview from '../components/DesignPreview'
 import BRadLine from '../components/BRadLine'
+import Footer from '../components/Footer'
 
-const Blog = ( { posts } ) => {
+const Designs = ( {designs} ) => {
 
     return (
         <Box>
@@ -21,18 +22,17 @@ const Blog = ( { posts } ) => {
                     fontSize='3rem'
                     fontWeight='500'
                 >
-                    The Blog.
+                    The Designs.
                 </Text>
                 <List margin='5rem 10rem' spacing={8}>
-                    {posts.map( (post) => (
+                    {designs.map((design) => (
                         <ListItem>
-                            <Link key={post.slug} href={`/blog/${post.slug}`}>
+                            <Link href={design.slug} href={`/designs/${design.slug}`}>
                                 <a>
-                                    <PostPreview 
-                                        title={post.title}
-                                        date={post.date}
-                                        time={post.time}
-                                        img={post.img}
+                                    <DesignPreview 
+                                        title={design.title}
+                                        description={design.description}
+                                        image={design.image}
                                     />
                                 </a>
                             </Link>
@@ -43,18 +43,17 @@ const Blog = ( { posts } ) => {
             <BRadLine/>
             <Footer/>
         </Box>
-
     )
-
 }
 
-export default Blog
+export default Designs
 
-export async function getStaticProps() {
-    const posts = await getAllFilesMetadata('posts')
+export async function getStaticProps () {
+
+    const designs = await getAllFilesMetadata('designs')
     return {
         props: {
-            posts
+            designs
         }
     }
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import {getFileBySlug, getFiles} from '../../../lib/mdx'
-import {MDXRemote} from 'next-mdx-remote'
+import { getFileBySlug, getFiles } from '../../../lib/mdx'
 import NavBar from '../../components/Navbar'
-import {Box, Container, Button, Flex} from '@chakra-ui/react'
+import { MDXRemote } from 'next-mdx-remote'
+import {Box, Container, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 
-const Post = ( { source, frontmatter } ) => {
+
+const Project = ( {source, frontmatter }) => {
 
     return (
         <Box>
@@ -20,20 +21,20 @@ const Post = ( { source, frontmatter } ) => {
                     <CustomButton
                         text='GO BACK'
                         size='md'
-                        page='/blog'
+                        page='/projects'
                         width='6.25rem'
                     />
                 </Flex>
             </Container>
         </Box>
     )
-
 }
 
+export default Project
 
 export async function getStaticProps( {params} ) {
 
-    const { source, frontmatter} = await getFileBySlug('posts' , params.slug)
+    const { source, frontmatter} = await getFileBySlug('projects' , params.slug)
 
     return {
         props: {source, frontmatter}
@@ -41,10 +42,10 @@ export async function getStaticProps( {params} ) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getFiles('posts')
-    const paths = posts.map((post) => ({
+    const projects = await getFiles('projects')
+    const paths = projects.map((project) => ({
         params: {
-            slug: post.replace(/\.mdx/, '')
+            slug: project.replace(/\.mdx/, '')
         }
     }))
 
@@ -52,6 +53,4 @@ export async function getStaticPaths() {
         paths, fallback: false,
     }
 }
-
-export default Post
 
