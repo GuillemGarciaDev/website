@@ -1,15 +1,12 @@
 import React from 'react'
 import NavBar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Preview from '../components/Preview'
+import PostPreview from '../components/PostPreview'
 import Link from 'next/link'
 import { getAllFilesMetadata } from '../../lib/mdx'
 import {Box, Text, Container, List, ListItem} from '@chakra-ui/react'
 import TRadLine from '../components/TRadLine'
 import BRadLine from '../components/BRadLine'
-import { motion } from 'framer-motion'
-
-
 
 const Blog = ( { posts } ) => {
 
@@ -31,7 +28,7 @@ const Blog = ( { posts } ) => {
                         <ListItem>
                             <Link key={post.slug} href={`/blog/${post.slug}`}>
                                 <a>
-                                    <Preview 
+                                    <PostPreview 
                                         title={post.title}
                                         date={post.date}
                                         time={post.time}

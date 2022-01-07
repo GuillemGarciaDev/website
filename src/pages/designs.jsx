@@ -1,11 +1,48 @@
 import React from 'react'
 import { getAllFilesMetadata } from '../../lib/mdx'
-import {Flex}
+import {Flex} from '@chakra-ui/react'
+import TRadLine from '../components/TRadLine'
+import NavBar from '../components/Navbar'
+import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
+import  Link from 'next/link'
+import DesignPreview from '../components/DesignPreview'
+import BRadLine from '../components/BRadLine'
+import Footer from '../components/Footer'
 
 const Designs = ( {designs} ) => {
 
     return (
-        
+        <Box>
+            <TRadLine/>
+            <NavBar/>
+            <Container maxW='container.lg'>
+                <Text 
+                    align='center'
+                    margin='7rem 0rem'
+                    fontSize='3rem'
+                    fontWeight='500'
+                >
+                    The Designs.
+                </Text>
+                <List margin='5rem 10rem' spacing={8}>
+                    {designs.map((design) => (
+                        <ListItem>
+                            <Link href={design.slug} href={`/designs/${design.slug}`}>
+                                <a>
+                                    <DesignPreview 
+                                        title={design.title}
+                                        description={design.description}
+                                        image={design.image}
+                                    />
+                                </a>
+                            </Link>
+                        </ListItem>
+                    ))}
+                </List>
+            </Container>
+            <BRadLine/>
+            <Footer/>
+        </Box>
     )
 }
 
@@ -15,6 +52,8 @@ export async function getStaticProps () {
 
     const designs = await getAllFilesMetadata('designs')
     return {
-        props: designs
+        props: {
+            designs
+        }
     }
 }
