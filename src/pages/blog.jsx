@@ -159,7 +159,7 @@ const Blog = ( { posts } ) => {
 export default Blog
 
 export async function getStaticProps() {
-    const posts = await getAllFilesMetadata()
+    const posts = await getAllFilesMetadata('posts')
     return {
         props: {
             posts

@@ -22,7 +22,7 @@ const Post = ( { source, frontmatter } ) => {
 
 export async function getStaticProps( {params} ) {
 
-    const { source, frontmatter} = await getFileBySlug(params.slug)
+    const { source, frontmatter} = await getFileBySlug('posts' , params.slug)
 
     return {
         props: {source, frontmatter}
@@ -30,7 +30,7 @@ export async function getStaticProps( {params} ) {
 }
 
 export async function getStaticPaths() {
-    const posts = await getFiles()
+    const posts = await getFiles('posts')
     const paths = posts.map((post) => ({
         params: {
             slug: post.replace(/\.mdx/, '')
