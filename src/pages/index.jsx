@@ -121,6 +121,7 @@ const Home = () => {
 								page={el.page}
 							/>
 						)}
+						
 					</SimpleGrid>
 				</Flex>
 			</Container>
