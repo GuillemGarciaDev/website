@@ -5,23 +5,16 @@ import {Container, Text, VStack} from '@chakra-ui/react'
 const LandingTitle = (props) => {
 
     return (
-        <VStack marginTop='12.5rem' marginBottom='12.5rem'>
+        <VStack marginTop='6rem' marginBottom='2rem'>
             <Text 
                 fontSize='6rem' 
-                fontWeight='300'  
+                fontWeight='600'  
                 color='secondaryVariant.100'
                 align='center'
                 >
-                Welcome
+                Meet the...
             </Text>
-            <Text 
-                fontSize='3rem' 
-                fontWeight='400'
-                color='secondaryVariant.100'
-                align='center'
-            >
-                Are you looking for something?
-            </Text>
+            
         </VStack>
     )
 }

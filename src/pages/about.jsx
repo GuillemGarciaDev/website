@@ -4,6 +4,7 @@ import {Container, SimpleGrid, Box, Text, Flex} from '@chakra-ui/react'
 import CustomButton from '../components/CustomButton'
 import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
+import AnimatedPage from '../components/AnimatedPage'
 
 const PhotoRadLine = () => {
     return (
@@ -66,8 +67,10 @@ const PhotoRadLine = () => {
 const About = () => {
 
     return (
+        
         <Box backgroundColor='primaryVariant.100'>
             <Navbar/>
+            <AnimatedPage>
             <Container maxW='container.lg'>
                 <SimpleGrid 
                     columns={[1, 2, 2, 2, 2]} 
@@ -112,9 +115,9 @@ const About = () => {
                     </Box>
                 </SimpleGrid>
             </Container>
+            </AnimatedPage>
             <Footer/>
         </Box>
-        
     )
 }
 
