@@ -5,12 +5,14 @@ import PostPreview from '../components/PostPreview'
 import Link from 'next/link'
 import { getAllFilesMetadata } from '../../lib/mdx'
 import {Box, Text, Container, List, ListItem} from '@chakra-ui/react'
+import AnimatedPage from '../components/AnimatedPage'
 
 const Blog = ( { posts } ) => {
 
     return (
         <Box>
             <NavBar/>
+            <AnimatedPage>
             <Container maxW='container.lg'>
                 <Text 
                     align='center'
@@ -37,9 +39,10 @@ const Blog = ( { posts } ) => {
                     ))}
                 </List>
             </Container>
+            </AnimatedPage>
             <Footer/>
         </Box>
-
+    
     )
 
 }

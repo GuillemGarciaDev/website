@@ -5,12 +5,15 @@ import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
 import  Link from 'next/link'
 import DesignPreview from '../components/DesignPreview'
 import Footer from '../components/Footer'
+import AnimatedPage from '../components/AnimatedPage'
 
 const Designs = ( {designs} ) => {
 
     return (
+        
         <Box>
             <NavBar/>
+            <AnimatedPage>
             <Container maxW='container.lg'>
                 <Text 
                     align='center'
@@ -36,6 +39,7 @@ const Designs = ( {designs} ) => {
                     ))}
                 </List>
             </Container>
+            </AnimatedPage>
             <Footer/>
         </Box>
     )

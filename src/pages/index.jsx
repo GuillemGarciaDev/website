@@ -5,7 +5,7 @@ import Feature from '../components/Feature'
 import Footer from '../components/Footer'
 import {Box, Container, SimpleGrid, Flex} from '@chakra-ui/react'
 import {motion} from 'framer-motion'
-
+import AnimatedPage from '../components/AnimatedPage'
 
 const features = [
 	{title: 'Creator', hiragana: '作成者', descr: 'I am a brief instant in the existence of time that tries to innovate and create new ideas that improve this world. To learn about my past, present and future click here.', page: '/about'},
@@ -16,8 +16,10 @@ const features = [
 
 const Home = () => {
 	return (
+		
 		<Box backgroundColor='primaryVariant.100'>
 			<HomeHead/>
+			<AnimatedPage>
 			<Container maxW='container.lg'>
 				<LandingTitle/>
 				<Flex alignItems='center' justifyContent='center'>
@@ -34,9 +36,9 @@ const Home = () => {
 					</SimpleGrid>
 				</Flex>
 			</Container>
+			</AnimatedPage>
 			<Footer/>
 		</Box>
-		
 	)
 }
 
