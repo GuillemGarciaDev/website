@@ -1,19 +1,15 @@
 import React from 'react'
 import { getAllFilesMetadata } from '../../lib/mdx'
-import {Flex} from '@chakra-ui/react'
-import TRadLine from '../components/TRadLine'
 import NavBar from '../components/Navbar'
 import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
 import  Link from 'next/link'
 import DesignPreview from '../components/DesignPreview'
-import BRadLine from '../components/BRadLine'
 import Footer from '../components/Footer'
 
 const Designs = ( {designs} ) => {
 
     return (
         <Box>
-            <TRadLine/>
             <NavBar/>
             <Container maxW='container.lg'>
                 <Text 
@@ -40,7 +36,6 @@ const Designs = ( {designs} ) => {
                     ))}
                 </List>
             </Container>
-            <BRadLine/>
             <Footer/>
         </Box>
     )

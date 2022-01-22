@@ -1,7 +1,8 @@
 import {Box, Container} from '@chakra-ui/react'
 import React from 'react'
 import Head from 'next/head'
-
+import TRadLine from './TRadLine'
+import BRadLine from './BRadLine'
 
 const Layout = ({children}) => {
 
@@ -20,7 +21,9 @@ const Layout = ({children}) => {
                 <title>Guillem Garcia</title>
             </Head>
             <Box minH='100vh' backgroundColor='primaryVariant.100'>
-                {children}
+                <TRadLine />
+                    {children}
+                <BRadLine/>
             </Box>
         </Box>
     )

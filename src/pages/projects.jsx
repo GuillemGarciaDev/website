@@ -1,8 +1,6 @@
 import React from 'react'
 import { getAllFilesMetadata } from '../../lib/mdx'
 import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
-import TRadLine from '../components/TRadLine'
-import BRadLine from '../components/BRadLine'
 import Footer from '../components/Footer'
 import NavBar from '../components/Navbar'
 import ProjectPreview from '../components/ProjectPreview'
@@ -12,7 +10,6 @@ const Projects = ( { projects } ) => {
 
     return (
         <Box>
-            <TRadLine/>
             <NavBar/>
             <Container maxW='container.lg'>
                 <Text 
@@ -35,7 +32,6 @@ const Projects = ( { projects } ) => {
                     ))}
                 </List>
             </Container>
-            <BRadLine/>
             <Footer/>
         </Box>
     )
