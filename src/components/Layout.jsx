@@ -21,23 +21,9 @@ const Layout = ({children}) => {
                 <title>Guillem Garcia</title>
             </Head>
             <Box minH='100vh'  backgroundColor='primaryVariant.100'>
-                <Box 
-                    display={['none', 'none', 'block', 'block']}
-                    position='absolute'
-                    top='-18rem'
-                    left='-18rem'
-                >
-                    <TRadLine />
-                </Box>
+                <TRadLine />
                     {children}
-                <Box 
-                    display={['none', 'none', 'block', 'block']}
-                    position='absolute'
-                    bottom='0rem'
-                    right='0rem'
-                >
-                    <BRadLine/>
-                </Box>
+                <BRadLine/>
             </Box>
         </Box>
     )

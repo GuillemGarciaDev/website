@@ -13,6 +13,7 @@ const TRadLine = () => {
                 repeat: Infinity,
                 duration: 10,
             }}
+            style={{display: 'block', position: 'absolute', top: '-18rem', left: '-18rem'}}
         >
             <svg  width="44.875rem" height="46.125rem" viewBox="0 0 718 738" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M376.736 378.179C376.736 376.551 353.9 353.702 352.273 353.702C350.646 353.702 327.81 376.551 327.81 378.179C327.81 379.807 350.646 402.657 352.273 402.657C353.9 402.657 376.736 379.807 376.736 378.179Z" stroke="black" stroke-width="0.4"/>
