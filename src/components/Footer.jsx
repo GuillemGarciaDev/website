@@ -16,7 +16,8 @@ const Footer = (props) => {
                 color='secondary.100'
                 fontFamily='Montserrat'
                 fontWeight='500'
-                padding='3rem 0rem' 
+                padding='3rem 1rem'
+                align='center'
             >
                 @ {new Date().getFullYear().toString()} GuillemGarciaDev. All rights reserved
             </Text>

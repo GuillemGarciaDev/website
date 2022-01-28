@@ -24,8 +24,8 @@ const Layout = ({children}) => {
                 <Box 
                     display={['none', 'none', 'block', 'block']}
                     position='absolute'
-                    top='-18rem'
-                    left='-18rem'
+                    top='-9rem'
+                    left='-9rem'
                 >
                     <TRadLine />
                 </Box>

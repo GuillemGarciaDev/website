@@ -6,7 +6,7 @@ const Feature = ({title, hiragana, descr, page}) => {
 
     return (
         <SimpleGrid columns={1} spacing={2} >
-            <Box maxW='400' maxH='334'>
+            <Box maxW='400' maxH='334' padding="1rem">
                 <Box display='flex' flexDirection='column' alignItems='left'>
                     <Text
                         fontSize='3.75rem'

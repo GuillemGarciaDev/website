@@ -23,7 +23,7 @@ const Home = () => {
 			<Container maxW='container.lg'>
 				<LandingTitle/>
 				<Flex alignItems='center' justifyContent='center'>
-					<SimpleGrid columns={2} spacing={5} padding='4rem 0rem 12rem'>
+					<SimpleGrid columns={[1, 1, 2, 2]} spacing={5} padding={['3rem 0rem 3rem']}>
 						{features.map(el =>
 							<Feature 
 								title={el.title}
