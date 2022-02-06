@@ -24,7 +24,7 @@ const NavBar = () => {
                 justifyContent={['flex-end', 'flex-end', 'center', 'center']}
                 backgroundColor='secondary.100'
                 position='relative'
-                zIndex={2}
+                zIndex={3}
             >
                 <Flex display={['none', 'none', 'flex', 'flex']}  flexDirection='row' alignItems='center' justifyContent='center'>
                     {pages.map(el => 
