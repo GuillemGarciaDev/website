@@ -4,13 +4,15 @@ import { useBreakpointValue } from '@chakra-ui/react'
 const BRadLine = () => {
 
     const width = useBreakpointValue({
-        base: '',
-        lg: '22rem',
+        base: '33rem',
+        md: '22rem',
+        lg: '33rem',
         xl: '33rem'
     })
 
     const height = useBreakpointValue({
-        base: '',
+        base: '33rem',
+        md: '22rem',
         lg: '22rem',
         xl: '33rem'
     })
@@ -21,7 +23,6 @@ const BRadLine = () => {
                 scale: [1, 0.8, 0.9, 0.8, 1],
                 rotate: [90, 90, 90, 90, 90],
             }}
-            rotat
             transition={{
                 repeat: Infinity,
                 duration: 10,
