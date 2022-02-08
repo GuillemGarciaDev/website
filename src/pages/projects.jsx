@@ -16,13 +16,13 @@ const Projects = ( { projects } ) => {
                 <Container maxW='container.lg'>
                     <Text 
                         align='center'
-                        margin='7rem 0rem'
+                        margin={['3rem 0rem', '3rem 0rem','7rem 0rem','7rem 0rem']}
                         fontSize='3rem'
                         fontWeight='500'
                     >
                         The Projects.
                     </Text>
-                    <List margin='5rem 10rem' spacing={8}>
+                    <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem', '5rem 10rem']}  spacing={8}>
                         {projects.map( (project) => (
                             <ProjectPreview 
                                 title={project.title}

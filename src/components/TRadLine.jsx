@@ -4,11 +4,13 @@ import { useBreakpointValue } from '@chakra-ui/react'
 const TRadLine = () => {
 
     const width = useBreakpointValue({
+        md: '12rem',
         lg: '22rem',
         xl: '33rem'
     })
 
     const height = useBreakpointValue({
+        md: '12rem',
         lg: '22rem',
         xl: '33rem'
     })
