@@ -16,13 +16,13 @@ const Blog = ( { posts } ) => {
             <Container maxW='container.lg'>
                 <Text 
                     align='center'
-                    margin='7rem 0rem'
+                    margin={['3rem 0rem', '3rem 0rem','7rem 0rem','7rem 0rem']}
                     fontSize='3rem'
                     fontWeight='500'
                 >
                     The Blog.
                 </Text>
-                <List margin='5rem 10rem' spacing={8}>
+                <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {posts.map( (post) => (
                         <ListItem>
                             <Link key={post.slug} href={`/blog/${post.slug}`}>

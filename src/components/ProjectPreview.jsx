@@ -1,24 +1,32 @@
 import React from 'react'
 import {FaGithub} from 'react-icons/fa'
-import {Flex, Text, Image, Button} from '@chakra-ui/react'
+import {Flex, Text, Image, Button, SimpleGrid} from '@chakra-ui/react'
 import CustomButton from './CustomButton'
 import Link from 'next/link'
 
 const ProjectPreview = ( {title, description, image, page, github} ) => {
 
     return (
-        <Flex
-            flexDirection='row'
-        >
-            <Image margin='0rem 1rem' src={image} boxSize='180px' borderRadius='15px'/>
+        <SimpleGrid columns={[1,1,2,2,2]}>
+            <Flex
+                flexDirection='row'
+                justifyContent={['center', 'center','flex-end','flex-end','flex-end']}
+                
+            >
+                <Image margin={['1rem', '1rem','0rem 1rem', '0rem 1rem', '0rem 1rem']} src={image} boxSize='180px' borderRadius='15px'/>
+            </Flex>
+            
             <Flex
                 flexDirection='column'
-                justifyContent='flex-start'
-                alignItems='left'
+                justifyContent={['center','center','flex-start','flex-start','flex-start']}
+                alignItems={['center','center','start','start','start']}
             >
                 <Link href={`/projects/${page}`}>
                     <a>
-                        <Text fontSize='2.125rem'>
+                        <Text 
+                            fontSize='2.125rem'
+                            align={['center', 'center','left','left','left']}
+                        >
                             {title}
                         </Text>
                     </a>
@@ -27,6 +35,8 @@ const ProjectPreview = ( {title, description, image, page, github} ) => {
                 <Text
                     fontFamily='Montserrat'
                     fontSize='0.875rem'
+                    align={['center','center','left','left','left']}
+                    margin={['0rem 2rem', '0rem 6rem', '0rem', '0rem', '0rem']}
                 >
                     {description}
                 </Text>
@@ -36,16 +46,14 @@ const ProjectPreview = ( {title, description, image, page, github} ) => {
                         backgroundColor='secondaryVariant.100'
                         color='white'
                         leftIcon={<FaGithub />}
-                        _hover={{
-
-                        }}
+                        _hover={{}}
                         marginTop='1rem'
                     >
                         GITHUB
                     </Button>
                 </a>
             </Flex>
-        </Flex>
+        </SimpleGrid>
     )
 }
 
