@@ -23,7 +23,7 @@ const PhotoRadLine = () => {
                 position: 'absolute', 
             }}
         >
-            <svg   top='50%' right='50%' width="400" height="400" viewBox="0 0 676 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg zIndex={0}  top='50%' right='50%' width="250" height="250" viewBox="0 0 676 676" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M362.736 338.179C362.736 336.551 339.9 313.701 338.273 313.701C336.646 313.701 313.809 336.551 313.809 338.179C313.809 339.807 336.646 362.657 338.273 362.657C339.9 362.657 362.736 339.807 362.736 338.179Z" stroke="black" stroke-width="0.4"/>
             <path d="M372.399 335.315C372.216 333.039 337.686 303.837 335.41 304.033C333.135 304.216 303.951 338.767 304.146 341.043C304.33 343.319 338.86 372.521 341.135 372.325C343.41 372.142 372.595 337.592 372.399 335.315Z" stroke="black" stroke-width="0.4"/>
             <path d="M381.83 331.729C381.402 328.829 334.738 294.168 331.827 294.597C328.928 295.025 294.287 341.716 294.716 344.629C295.144 347.53 341.808 382.19 344.719 381.761C347.618 381.333 382.258 334.642 381.83 331.729Z" stroke="black" stroke-width="0.4"/>
@@ -66,6 +66,8 @@ const PhotoRadLine = () => {
 
 const About = () => {
 
+    
+
     return (
         
         <Box backgroundColor='primaryVariant.100'>
@@ -101,8 +103,9 @@ const About = () => {
                             fontSize='1rem'
                             fontWeight='400'
                             margin='1rem 0rem'
+                            fontFamily='Montserrat'
                         >
-                            Wisi forensibus mnesarchum in cum. Per id impetus abhorreant, his no magna definiebas, inani rationibus in quo. Ut vidisse dolores est, ut quis nominavi mel. Ad pri quod apeirian concludaturque, id timeam iudicabit rationibus pri. Erant putant luptatum ex sit, error euismod ad qui, meliore voluptatum complectitur an vix. Clita persius sed et, vix vidit consulatu complectitur ex. Per nonummy postulant assentior an, mea audiam fabellas deserunt id.
+                            That's me. A 21 year old Computer Science student at the Universitat Politécnica de Barcelona. Currently I am also in my 4th year of my degree and I work at InLab developing innovative software projects. <br></br> <br></br>I try to learn something new every day and, with this excuse, I have created this website to share everything I think, design, build and learn.
                         </Text>
                         <CustomButton
                             text='GO BACK'
