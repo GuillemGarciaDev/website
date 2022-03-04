@@ -21,7 +21,6 @@ const BRadLine = () => {
                 scale: [1, 0.8, 0.9, 0.8, 1],
                 rotate: [90, 90, 90, 90, 90],
             }}
-            rotat
             transition={{
                 repeat: Infinity,
                 duration: 10,

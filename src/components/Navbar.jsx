@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import {Flex, Text, IconButton} from '@chakra-ui/react'
+import {Flex, Text, IconButton,Box} from '@chakra-ui/react'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {GrClose} from 'react-icons/gr'
 
@@ -17,7 +17,7 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = React.useState('none')
 
     return (
-        <>
+        <Box>
             <Flex
                 flexDirection='row'
                 alignItems='center'
@@ -115,7 +115,7 @@ const NavBar = () => {
                     )}
                 </Flex>
             </Flex>
-        </>
+        </Box>
             
     )
 

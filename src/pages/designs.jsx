@@ -24,7 +24,7 @@ const Designs = ( {designs} ) => {
                     The Designs.
                 </Text>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
-                    {designs.map((design) => (
+                    {designs.length > 1 ? designs.map((design) => (
                         <ListItem>
                             <Link href={design.slug} href={`/designs/${design.slug}`}>
                                 <a>
@@ -36,7 +36,7 @@ const Designs = ( {designs} ) => {
                                 </a>
                             </Link>
                         </ListItem>
-                    ))}
+                    )) : <Text as='h5' fontSize='2rem' color='#9A9483' align='center'>Oh! Seems like there are no posts on this page yet...</Text>}
                 </List>
             </Container>
             </AnimatedPage>
