@@ -11,7 +11,7 @@ const DesignPreview = ({title, image, description}) => {
                 justifyContent={['center', 'center','flex-end','flex-end','flex-end']}
                 alignItems='center'
             >
-                <Image margin={['1rem', '1rem','0rem 1rem', '0rem 1rem', '0rem 1rem']} src={image} boxSize='150px' borderRadius='15px'/>
+                <Image margin={['1rem', '1rem','0rem 1rem', '0rem 1rem', '0rem 1rem']} src={String(image)} boxSize='150px' borderRadius='15px'/>
             </Flex>
             <Flex
                 flexDirection='column'
