@@ -5,7 +5,7 @@ import NavBar from '../../components/Navbar'
 import {Box, Container, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 import MDXComponents from '../../components/MDXComponents'
-
+import Footer from '../../components/Footer'
 const Design = ( {source, frontmatter}) => {
 
     return (
@@ -21,11 +21,12 @@ const Design = ( {source, frontmatter}) => {
                     <CustomButton
                         text='GO BACK'
                         size='md'
-                        page='/blog'
+                        page='/designs'
                         width='6.25rem'
                     />
                 </Flex>
             </Container>
+            <Footer/>
         </Box>
     )
 }
