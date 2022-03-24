@@ -7,6 +7,8 @@ import DesignPreview from '../components/DesignPreview'
 import Footer from '../components/Footer'
 import AnimatedPage from '../components/AnimatedPage'
 
+
+
 const Designs = ( {designs} ) => {
 
     return (
