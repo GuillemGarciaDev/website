@@ -6,26 +6,29 @@ import {Box, Container, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 import MDXComponents from '../../components/MDXComponents'
 import Footer from '../../components/Footer'
+import AnimatedPage from '../../components/AnimatedPage'
 const Design = ( {source, frontmatter}) => {
 
     return (
         <Box>
             <NavBar/>
-            <Container maxW='container.md'>
-                <MDXRemote {...source} components={MDXComponents}/>
-                <Flex
-                    flexDirection='row'
-                    alignItems='center'
-                    justifyContent='center'
-                >
-                    <CustomButton
-                        text='GO BACK'
-                        size='md'
-                        page='/designs'
-                        width='6.25rem'
-                    />
-                </Flex>
-            </Container>
+                <AnimatedPage>
+                <Container maxW='container.md'>
+                    <MDXRemote {...source} components={MDXComponents}/>
+                    <Flex
+                        flexDirection='row'
+                        alignItems='center'
+                        justifyContent='center'
+                    >
+                        <CustomButton
+                            text='GO BACK'
+                            size='md'
+                            page='/designs'
+                            width='6.25rem'
+                        />
+                    </Flex>
+                </Container>
+                </AnimatedPage>
             <Footer/>
         </Box>
     )
