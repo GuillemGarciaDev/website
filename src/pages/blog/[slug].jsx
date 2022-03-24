@@ -5,6 +5,7 @@ import NavBar from '../../components/Navbar'
 import {Box, Container, Button, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 import MDXComponents from '../../components/MDXComponents'
+import Footer from '../../components/Footer'
 
 const Post = ( { source, frontmatter } ) => {
 
@@ -29,6 +30,7 @@ const Post = ( { source, frontmatter } ) => {
                     />
                 </Flex>
             </Container>
+            <Footer/>
         </Box>
     )
 
