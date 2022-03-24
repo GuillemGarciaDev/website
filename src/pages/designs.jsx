@@ -28,7 +28,7 @@ const Designs = ( {designs} ) => {
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {designs.length > 1 ? designs.map((design) => (
                         <ListItem>
-                            <Link href={design.slug} href={`/designs/${design.slug}`}>
+                            <Link  href={`/designs/${design.slug}`}>
                                 <a>
                                     <DesignPreview 
                                         title={design.title}
