@@ -76,7 +76,7 @@ const About = () => {
             <Container maxW='container.lg'>
                 <SimpleGrid 
                     columns={[1, 1, 2, 2]} 
-                    padding={['3rem 2rem','3rem 2rem', '6rem 2rem','6rem 2rem']}
+                    padding={['3rem 1rem','3rem 1rem', '6rem 2rem','6rem 2rem']}
                     spacing={10}
                 >
                     <Box>
@@ -101,7 +101,7 @@ const About = () => {
                         </Text>
                         <Text
                             fontSize='1rem'
-                            fontWeight='400'
+                            fontWeight='500'
                             margin='1rem 0rem'
                             fontFamily='Montserrat'
                         >
