@@ -11,16 +11,16 @@ const breakpoints = createBreakpoints({
 const theme = extendTheme({
 	colors: {
 		primary: {
-			100:'#F0E9D2'
+			100:'#EEEEEE'
 		},
 		primaryVariant: {
-			100:'#E6DDC4'
+			100:'#EEEEEE'
 		},
 		secondary: {
-			100:'#678983'
+			100:'#393E46'
 		},
 		secondaryVariant: {
-			100:'#181D31'
+			100:'#222831'
 		},
 		background: {
 			100:'#1E2022'
