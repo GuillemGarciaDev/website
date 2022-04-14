@@ -88,7 +88,7 @@ const About = () => {
                             zIndex={2}
                             backgroundColor='transparent'
                         >
-                            <Image zIndex={2} w='60%' h='60%' borderRadius='5%' src='/photo.jpeg' alt='My picture' />
+                            <Image zIndex={2} w='60%' h='60%' borderRadius='5%' src='/profile.JPG' alt='My picture' />
                             <PhotoRadLine/>
                         </Box>
                     </Box>
