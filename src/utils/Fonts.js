@@ -57,8 +57,63 @@ const Fonts = () => {
             @font-face {
                 font-family: 'Bogart';
                 font-weight: 100;
-                src: url(/public/fonts/Bogart/Bogart-Thin-trial.ttf) format("truetype");
+                src: url(/fonts/Bogart/Bogart-Thin-trial.ttf) format("truetype");
             }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 100;
+                src: url(/fonts/Montserrat/Montserrat-Thin.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 200;
+                src: url(/fonts/Montserrat/ExtraLight.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 300;
+                src: url(/fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                src: url(/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 500;
+                src: url(/fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 600;
+                src: url(/fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 700;
+                src: url(/fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 800;
+                src: url(/fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                font-weight: 900;
+                src: url(/fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+            }
+
             `}
 		/>
 	)
