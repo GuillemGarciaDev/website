@@ -10,9 +10,9 @@ const Layout = ({children}) => {
         <Box>
             <Head>
                 <meta charset="utf-8"/>
-                <meta name="description" content="The coding globetrotter - Guillem Garcia. Welcome to my presentation. It doesn't matter who I am, it matters what I am capable of doing. Enter to discover what you've never seen before." />
+                <meta name="description" content="Reading, Thinking, Writing and Acting." />
                 <meta name="author" content="Guillem Garcia"/>
-                <meta name="keywords" content="Software Developer, Junior Software Developer, React, Next, Node, SQL, MongoDB, Databases, Architecture, Agile"/>
+                <meta name="keywords" content="Software Developer, Junior Software Developer, React, Next, Node, SQL, MongoDB, Databases, Architecture, Agile, Writing, Reading, Books, Thinking, Philosophy"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta rel="canonical" href="https://guillemgarcia.dev"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
