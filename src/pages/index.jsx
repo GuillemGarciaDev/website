@@ -10,7 +10,7 @@ import Sidebar from '../components/Sidebar'
 
 const features = [
 	{title: 'Creator', hiragana: '作成者', descr: 'I am a brief instant in the existence of time that tries to innovate and create new ideas that improve this world. To learn about my past, present and future click here.', page: '/about'},
-	{title: 'Thinker', hiragana: '思想家', descr: 'During my existence in this world, I usually think about everything that surrounds me, trying to understand it and share all my learning with anyone who is willing to listen to me. If you are one of these you are ready to start reading.', page: '/blog'},
+	{title: 'Thinker', hiragana: '思想家', descr: 'Here is my container where I keep my ideas, writings and reflections on everything I find interesting and need to write. You are totally invited to enter', page: '/blog'},
 	{title: 'Designer', hiragana: '設計者', descr: 'Sometimes I let my head try to give shape to some crazy ideas and here you have the result. I hope it can be of some use to you.', page: '/designs'},
 	{title: 'Developer', hiragana: '開発者', descr: 'As a software developer and student that I am, there is nothing that allows me to improve and show this process as a project. Here you will find all those projects that I have created, built and who knows if finished.', page: '/projects'},
 ]
