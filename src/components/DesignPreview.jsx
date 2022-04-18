@@ -21,10 +21,11 @@ const DesignPreview = ({title, image, description}) => {
                 <Heading 
                     fontSize='2.125rem'
                     fontWeight='500'
-                    align={['center', 'center','left','left','left']}
+                    alignSelf={['center', 'center','left','left','left']}
                     _hover={{
                         color: 'secondary.100'
                     }}
+                    margin={['0rem 2rem', '0rem 6rem', '0rem', '0rem', '0rem']}
                 >
                     {title}
                 </Heading>
