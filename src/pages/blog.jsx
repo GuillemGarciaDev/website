@@ -23,7 +23,7 @@ const Blog = ( { posts } ) => {
                     The Blog.
                 </Text>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
-                    {posts.length > 1 ? posts.map( (post) => (
+                    {posts.length > 0 ? posts.map( (post) => (
                         <ListItem>
                             <Link key={post.slug} href={`/blog/${post.slug}`}>
                                 <a>
