@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import PostPreview from '../components/PostPreview'
 import Link from 'next/link'
 import { getAllFilesMetadata } from '../../lib/mdx'
-import {Box, Text, Container, List, ListItem} from '@chakra-ui/react'
+import {Box, Text, Container, List, ListItem, Heading} from '@chakra-ui/react'
 import AnimatedPage from '../components/AnimatedPage'
 
 const Blog = ( { posts } ) => {
@@ -14,14 +14,14 @@ const Blog = ( { posts } ) => {
             <NavBar/>
             <AnimatedPage>
             <Container maxW='container.lg'>
-                <Text 
+                <Heading 
                     align='center'
                     margin={['3rem 0rem', '3rem 0rem','7rem 0rem','7rem 0rem']}
                     fontSize='3rem'
                     fontWeight='500'
                 >
                     The Blog.
-                </Text>
+                </Heading>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {posts.length > 0 ? posts.map( (post) => (
                         <ListItem>

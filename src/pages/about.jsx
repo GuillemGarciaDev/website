@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import {Container, SimpleGrid, Box, Text, Flex, Image} from '@chakra-ui/react'
+import {Container, SimpleGrid, Box, Text, Flex, Image, Heading} from '@chakra-ui/react'
 import CustomButton from '../components/CustomButton'
 import Footer from '../components/Footer'
 import {motion} from 'framer-motion'
@@ -93,12 +93,12 @@ const About = () => {
                         </Box>
                     </Box>
                     <Flex flexDirection='column' justifyContent='center'>
-                        <Text
+                        <Heading
                             fontSize='3rem'
                             fontWeight='600'
                         >
                             About Guillem
-                        </Text>
+                        </Heading>
                         <Text
                             fontSize='1rem'
                             fontWeight='500'

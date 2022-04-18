@@ -33,8 +33,8 @@ const theme = extendTheme({
 		}
 	},
 	fonts: {
-		body: 'Bogart',
-		heading: 'Bogart'
+		body: 'Montserrat',
+		heading: 'Bogart',
 	},
 	breakpoints
 })

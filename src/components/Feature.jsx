@@ -1,5 +1,5 @@
 import React from 'react'
-import  {Text, Box, SimpleGrid} from '@chakra-ui/react'
+import  {Text, Heading, Box, SimpleGrid} from '@chakra-ui/react'
 import CustomButton from './CustomButton'
 
 const Feature = ({title, hiragana, descr, page}) => {
@@ -8,12 +8,12 @@ const Feature = ({title, hiragana, descr, page}) => {
         <SimpleGrid columns={1} spacing={2} >
             <Box maxW='400' maxH='334' padding="1rem">
                 <Box display='flex' flexDirection='column' alignItems='left'>
-                    <Text
+                    <Heading
                         fontSize='3.75rem'
                         fontWeight='600'
                     >
                         {title}
-                    </Text>
+                    </Heading>
                 </Box>
                 <Box display='flex' flexDirection='column' alignItems='center' marginBottom='1rem'>
                     <Text

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaGithub} from 'react-icons/fa'
-import {Flex, Text, Image, Button, SimpleGrid} from '@chakra-ui/react'
+import {Flex, Text, Image, Button, SimpleGrid, Heading} from '@chakra-ui/react'
 import CustomButton from './CustomButton'
 import Link from 'next/link'
 
@@ -23,12 +23,13 @@ const ProjectPreview = ( {title, description, image, page, github} ) => {
             >
                 <Link href={`/projects/${page}`}>
                     <a>
-                        <Text 
+                        <Heading 
                             fontSize='2.125rem'
+                            fontWeight='500'
                             align={['center', 'center','left','left','left']}
                         >
                             {title}
-                        </Text>
+                        </Heading>
                     </a>
                 </Link>
                         
