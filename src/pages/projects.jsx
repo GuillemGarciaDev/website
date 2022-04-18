@@ -14,14 +14,14 @@ const Projects = ( { projects } ) => {
             <NavBar/>
             <AnimatedPage>
                 <Container maxW='container.lg'>
-                    <Text 
+                    <Heading 
                         align='center'
                         margin={['3rem 0rem', '3rem 0rem','7rem 0rem','7rem 0rem']}
                         fontSize='3rem'
                         fontWeight='500'
                     >
                         The Projects.
-                    </Text>
+                    </Heading>
                     <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem', '5rem 10rem']}  spacing={8}>
                         {projects.length > 1 ? projects.map( (project) => (
                             <ProjectPreview 

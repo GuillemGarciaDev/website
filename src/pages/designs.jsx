@@ -1,7 +1,7 @@
 import React from 'react'
 import { getAllFilesMetadata } from '../../lib/mdx'
 import NavBar from '../components/Navbar'
-import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
+import {Box, Container, Text, List, ListItem, Heading} from '@chakra-ui/react'
 import  Link from 'next/link'
 import DesignPreview from '../components/DesignPreview'
 import Footer from '../components/Footer'
@@ -17,14 +17,14 @@ const Designs = ( {designs} ) => {
             <NavBar/>
             <AnimatedPage>
             <Container maxW='container.lg'>
-                <Text 
+                <Heading 
                     align='center'
                     margin={['3rem 0rem', '3rem 0rem','7rem 0rem','7rem 0rem']}
                     fontSize='3rem'
                     fontWeight='500'
                 >
                     The Designs.
-                </Text>
+                </Heading>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {designs.length > 0 ? designs.map((design) => (
                         <ListItem>

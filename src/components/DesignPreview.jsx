@@ -1,5 +1,5 @@
 import React from 'react'
-import  {Flex, Text, Image, SimpleGrid} from '@chakra-ui/react'
+import  {Flex, Text, Image, SimpleGrid, Heading} from '@chakra-ui/react'
 
 
 const DesignPreview = ({title, image, description}) => {
@@ -18,15 +18,16 @@ const DesignPreview = ({title, image, description}) => {
                 justifyContent={['center','center','flex-start','flex-start','flex-start']}
                 
             >
-                <Text 
+                <Heading 
                     fontSize='2.125rem'
+                    fontWeight='500'
                     align={['center', 'center','left','left','left']}
                     _hover={{
                         color: 'secondary.100'
                     }}
                 >
                     {title}
-                </Text>
+                </Heading>
                 <Text
                     fontFamily='Montserrat'
                     fontSize='0.875rem'
