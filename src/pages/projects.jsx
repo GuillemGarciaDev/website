@@ -1,6 +1,6 @@
 import React from 'react'
 import { getAllFilesMetadata } from '../../lib/mdx'
-import {Box, Container, Text, List, ListItem} from '@chakra-ui/react'
+import {Box, Container, Text, List, ListItem, Heading} from '@chakra-ui/react'
 import Footer from '../components/Footer'
 import NavBar from '../components/Navbar'
 import ProjectPreview from '../components/ProjectPreview'
