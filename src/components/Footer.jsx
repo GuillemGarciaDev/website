@@ -19,7 +19,7 @@ const Footer = (props) => {
                 padding='3rem 1rem'
                 align='center'
             >
-                @ {new Date().getFullYear().toString()} GuillemGarciaDev. All rights reserved
+                © {new Date().getFullYear().toString()} GuillemGarciaDev. All rights reserved.
             </Text>
         </Box>
             

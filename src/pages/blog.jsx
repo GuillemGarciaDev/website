@@ -20,7 +20,7 @@ const Blog = ( { posts } ) => {
                     fontSize='3rem'
                     fontWeight='500'
                 >
-                    The Blog.
+                    El Blog.
                 </Heading>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {posts.length > 0 ? posts.map( (post) => (
@@ -36,7 +36,7 @@ const Blog = ( { posts } ) => {
                                 </a>
                             </Link>
                         </ListItem>
-                    )) : <Text as='h5' fontSize='2rem' color='#9A9483' align='center'>Oh! Seems like there are no posts on this page yet...</Text>}
+                    )) : <Text as='h5' fontSize='2rem' color='#9A9483' align='center'>¡Oh! Parece que todavía no hay publicaciones en esta página...</Text>}
                 </List>
             </Container>
             </AnimatedPage>

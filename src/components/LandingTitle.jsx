@@ -12,7 +12,7 @@ const LandingTitle = (props) => {
                 color='secondaryVariant.100'
                 align='center'
                 >
-                Meet the...
+                Conoce al...
             </Heading>
             
         </VStack>

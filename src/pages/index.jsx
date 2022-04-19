@@ -9,10 +9,10 @@ import AnimatedPage from '../components/AnimatedPage'
 import Sidebar from '../components/Sidebar'
 
 const features = [
-	{title: 'Creator', hiragana: '作成者', descr: 'I am a brief instant in the existence of time that tries to innovate and create new ideas that improve this world. To learn about my past, present and future click here.', page: '/about'},
-	{title: 'Thinker', hiragana: '思想家', descr: 'Here is my container where I keep my ideas, writings and reflections on everything I find interesting and need to write. You are totally invited to enter', page: '/blog'},
-	{title: 'Designer', hiragana: '設計者', descr: 'Sometimes I let my head try to give shape to some crazy ideas and here you have the result. I hope it can be of some use to you.', page: '/designs'},
-	{title: 'Developer', hiragana: '開発者', descr: 'As a software developer and student that I am, there is nothing that allows me to improve and show this process as a project. Here you will find all those projects that I have created, built and who knows if finished.', page: '/projects'},
+	{title: 'Creador', hiragana: '作成者', descr: 'Una persona curiosa que trata de entender aquello que le rodea. Si quieres saber más entra.', page: '/about'},
+	{title: 'Pensador', hiragana: '思想家', descr: 'Aquí está mi contenedor donde guardo mis ideas, relatos y reflexiones sobre todo lo que me parece interesante y siento necesidad de  escribir. Estás totalmente invitado a entrar y echar un ojo.', page: '/blog'},
+	{title: 'Diseñador', hiragana: '設計者', descr: 'A veces dejo que mi cabeza intente dar forma a algunas ideas locas y aquí tenéis el resultado. Espero que os pueda servir de algo.', page: '/designs'},
+	{title: 'Developer', hiragana: '開発者', descr: 'Como desarrollador de software y estudiante que soy, no hay nada que me permita mejorar y mostrar este proceso como un proyecto. Aquí encontrarás todos aquellos proyectos que he creado, construido y quién sabe si terminado.', page: '/projects'},
 ]
 
 const Home = () => {
