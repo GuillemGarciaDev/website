@@ -18,17 +18,22 @@ const DesignPreview = ({title, image, description}) => {
                 justifyContent={['center','center','flex-start','flex-start','flex-start']}
                 
             >
-                <Heading 
-                    fontSize='2.125rem'
-                    fontWeight='500'
-                    alignSelf={['center', 'center','left','left','left']}
-                    _hover={{
-                        color: 'secondary.100'
-                    }}
-                    margin={['0rem 2rem', '0rem 6rem', '0rem', '0rem', '0rem']}
+                <Flex 
+                    flexDirection='column'
+                    justifyContent={['center','center','flex-start','flex-start','flex-start']}
+                    alignItems={['center','center','flex-start','flex-start','flex-start']}
                 >
-                    {title}
-                </Heading>
+                    <Heading 
+                        fontSize='2.125rem'
+                        fontWeight='500'
+                        _hover={{
+                            color: 'secondary.100'
+                        }}
+                        margin={['0rem 2rem', '0rem 6rem', '0rem', '0rem', '0rem']}
+                    >
+                        {title}
+                    </Heading>
+                </Flex>
                 <Text
                     fontFamily='Montserrat'
                     fontSize='0.875rem'

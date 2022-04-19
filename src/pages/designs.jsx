@@ -23,7 +23,7 @@ const Designs = ( {designs} ) => {
                     fontSize='3rem'
                     fontWeight='500'
                 >
-                    The Designs.
+                    Los Diseños.
                 </Heading>
                 <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem']} spacing={8}>
                     {designs.length > 0 ? designs.map((design) => (
@@ -38,7 +38,7 @@ const Designs = ( {designs} ) => {
                                 </a>
                             </Link>
                         </ListItem>
-                    )) : <Text as='h5' fontSize='2rem' color='#9A9483' align='center'>Oh! Seems like there are no posts on this page yet...</Text>}
+                    )) : <Text as='h5' fontSize='2rem' color='#9A9483' align='center'>¡Oh! Parece que todavía no hay publicaciones en esta página...</Text>}
                 </List>
             </Container>
             </AnimatedPage>
