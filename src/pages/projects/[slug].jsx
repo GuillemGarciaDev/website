@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import {Box, Container, Flex} from '@chakra-ui/react'
 import CustomButton from '../../components/CustomButton'
 import MDXComponents from '../../components/MDXComponents'
+import Footer from '../../components/Footer'
 
 const Project = ( {source, frontmatter }) => {
 
@@ -12,7 +13,10 @@ const Project = ( {source, frontmatter }) => {
         <Box>
             <NavBar/>
             <Container maxW='container.md'>
-                <MDXRemote {...source} components={MDXComponents} />
+                <Box padding='4rem 0rem'>
+                    <MDXRemote {...source} components={MDXComponents}/>
+                </Box>
+                
                 <Flex
                     flexDirection='row'
                     alignItems='center'
@@ -26,6 +30,7 @@ const Project = ( {source, frontmatter }) => {
                     />
                 </Flex>
             </Container>
+            <Footer/>
         </Box>
     )
 }
