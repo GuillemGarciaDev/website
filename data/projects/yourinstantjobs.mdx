@@ -1,0 +1,56 @@
+---
+title: 'Your Instant Jobs'
+description: 'A one-day idea that turned out to be an awarded hackathon project'
+image: 'https://media.infojobs.net/appgrade/icons/ico-ij-android.png'
+github: 'https://github.com/GuillemGarciaDev/hackupc-2022-challenge'
+---
+
+
+
+# Your Instant Jobs
+#### By Guillem García
+---
+<br/>
+
+El 27 de abril de este año, mi amigo y compañero Longbo y yo conseguimos construir en 12 horas algo que jamás hubiésemos pensado que fuésemos capaces de conseguir. Principalmente por ser nuestra primera vez en una hackathon y por ser dos personas.
+
+### Que conseguimos hacer
+
+Participamos en la HackUPC, la hackathon organizada por estudiantes de nuestra universidad, específicamente en el challenge de InfoJobs, la empresa española referente a la hora de buscar trabajo.
+<br/>
+
+El challenge era sencillo: construir y proponer una nueva UI que intentase mejorar las principales características de su web. Y en eso nos centramos. Pero el abanico de posibilidades era sumamente amplio. Así que decidimos acotar el gran rango de ideas que se nos ocurrían y llevar las escogidas a cabo mediante la técnica que **se ha convertido en mi *modus operandi* de creación, modelización y ejecución de ideas.** Por si estás interesado, pienso escribir el siguiente artículo sobre esta técnica.
+<br/>
+En fin, aquí está el resultado final:
+
+
+### El resultado
+
+![Project](/posts/yourinstantjobs.png)
+
+Creamos una web app pensada para móvil en la que, a partir de introducir únicamente una descripción del perfil que buscas o en el que te quieres convertir, encontramos las ofertas relacionadas con la descripción aportada. De esta manera reducimos significativamente la resistencia entre el usuario y su objetivo de encontrar ofertas.
+<br/>
+
+Para detectar las palabras más relevantes en la descripción decidimos utilizar un **keyword extractor** y, mediante la API proporcionada por InfoJobs, realizábamos queries según las palabras extraídas.
+<br/>
+Además, propusimos el modelo "Tinder" a la hora de mostrar las ofertas para que se sienta activo durante su búsqueda y no se vuelva algo pasivo y aburrido.
+<br/>
+Pero que haríamos con todas esas ofertas que le han gustado al usuario si en ningún momento ha iniciado sesión  con una cuenta o se ha registrado? Partiendo de nuestro principio de rapidez y comodidad, volviendo a utilizar un único campo e introduciendo una cuenta de correo electrónico enviamos al usuario todas las ofertas que ha seleccionado, con sus respectivos links a la página de InfoJobs para seguir con la búsqueda.
+<br/>
+Aquí os dejo el <a target="_blank" href="https://www.yourinstantjobs.es">enlace</a> por si os apetece probarlo (recordad que está pensada para móvil).
+
+### Como está construida
+
+La aplicación está divida en dos componentes:
+<br/>
+
+Un frontend hecho con **React** y con **Tailwind CSS**, que nos ofrecieron una increíble rapidez para hacer el prototipo, y un backend hecho con **Node.js** y **Express** que se encarga de enlazar las búsquedas y de enviar los mails.
+<br/>
+
+Además, decidimos hostear la aplicación en **Vercel** y el backend en **Heroku**.
+<br/>
+Podeis encontrar todo el código en el enlace a <a target="_blank" href="https://github.com/GuillemGarciaDev/hackupc-2022-challenge">Github</a> (y no olvidéis de darle a la ⭐️).
+<br/>
+Y esto ha sido todo! Espero que os haya entretenido y nos vemos hasta el siguiente proyecto.
+
+

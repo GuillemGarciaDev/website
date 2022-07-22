@@ -23,7 +23,7 @@ const Projects = ( { projects } ) => {
                         Los Proyectos.
                     </Heading>
                     <List margin={['2rem 2rem', '2rem 2rem','5rem 10rem', '5rem 10rem', '5rem 10rem']}  spacing={8}>
-                        {projects.length > 1 ? projects.map( (project) => (
+                        {projects.length > 0 ? projects.map( (project) => (
                             <ProjectPreview 
                                 title={project.title}
                                 description={project.description}
